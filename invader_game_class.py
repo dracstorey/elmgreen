@@ -24,6 +24,7 @@ class Game (pygame.sprite.Sprite):
     def __init__(self):
         ## Initialise sprite class (super class)
         super().__init__()
+        
         ## Create enemy and all sprite group
         self.block_list = pygame.sprite.Group()
         self.all_sprites_list = pygame.sprite.Group()
@@ -32,7 +33,7 @@ class Game (pygame.sprite.Sprite):
         ## Create invaders
         for x in range(self.blocks):
             my_enemy = Enemy(WHITE, 10, 10,5)
-            self.block_list.add(my_enemy)
+            self. block_list.add(my_enemy)
             self.all_sprites_list.add(my_enemy)
     
 
